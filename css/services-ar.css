@@ -1,0 +1,38 @@
+/* Arabic Services Gallery Styles */
+
+/* RTL Support for Gallery */
+[dir="rtl"] .gallery-item figcaption {
+  text-align: right;
+}
+
+[dir="rtl"] .gallery-empty {
+  text-align: center;
+}
+
+/* Arabic Typography */
+[dir="rtl"] .gallery-item figcaption {
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.6;
+}
+
+[dir="rtl"] .gallery-empty p {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Service Card Thumbnails RTL */
+[dir="rtl"] .service-card-thumbnail {
+  direction: ltr; /* Keep image orientation */
+}
+
+/* Gallery Section RTL */
+[dir="rtl"] .service-gallery-section h2 {
+  text-align: center;
+}
+
+/* Responsive adjustments for Arabic */
+@media (max-width: 768px) {
+  [dir="rtl"] .gallery-item figcaption {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+}

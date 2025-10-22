@@ -1,31 +1,16 @@
-{
-  "outputDirectory": "pages",
+﻿{
+  "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ],
   "headers": [
     {
-      "source": "/images/(.*)",
+      "source": "/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     }
-    // add more static folders here in the future if needed
-  ],
-  "redirects": [
-    { "source": "/", "destination": "/index.html", "permanent": false },
-
-    { "source": "/index-ar", "destination": "/index-ar.html", "permanent": false },
-
-    { "source": "/about", "destination": "/about.html", "permanent": false },
-    { "source": "/about-ar", "destination": "/about-ar.html", "permanent": false },
-
-    { "source": "/services", "destination": "/services.html", "permanent": false },
-    { "source": "/services-ar", "destination": "/services-ar.html", "permanent": false },
-
-    { "source": "/cleaning-types", "destination": "/cleaning-types.html", "permanent": false },
-    { "source": "/cleaning-types-ar", "destination": "/cleaning-types-ar.html", "permanent": false },
-
-    { "source": "/contact", "destination": "/contact.html", "permanent": false },
-    { "source": "/contact-ar", "destination": "/contact-ar.html", "permanent": false }
   ]
 }

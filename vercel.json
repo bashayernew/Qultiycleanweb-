@@ -1,4 +1,9 @@
 ﻿{
+  "redirects": [
+    { "source": "/images/favicon.png", "destination": "/images/logo.png", "permanent": true }
+  ]
+}
+{
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,

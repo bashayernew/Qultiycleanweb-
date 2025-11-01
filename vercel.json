@@ -1,6 +1,7 @@
 ﻿{
-  "redirects": [
-    { "source": "/images/favicon.png", "destination": "/images/logo.png", "permanent": true }
+  "rewrites": [
+    { "source": "/favicon.ico", "destination": "/images/logo.png" },
+    { "source": "/images/favicon.png", "destination": "/images/logo.png" }
   ]
 }
 {

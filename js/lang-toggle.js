@@ -1,32 +1,29 @@
 // Quality Clean Website - Language Toggle
 
 // ========================================
-// Language Switching Function
+// Language Switching (robust for extensionless URLs)
 // ========================================
 
+function getCurrentPageInfo() {
+    let page = window.location.pathname.split('/').pop() || 'index.html';
+    // strip query/hash
+    page = page.split('?')[0].split('#')[0];
+    // remove .html if present → supports extensionless routing
+    let name = page.endsWith('.html') ? page.slice(0, -5) : page; // e.g. "about", "about-ar", "index"
+    if (name === '' || name === '/') name = 'index';
+    const isArabic = name.endsWith('-ar');
+    const slug = isArabic ? name.slice(0, -3) : name; // remove "-ar"
+    return { slug: slug || 'index', isArabic };
+}
+
 function switchLanguage(lang) {
-    // Get current page name
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    
-    // Remove -ar suffix if present
-    const basePage = currentPage.replace('-ar.html', '.html');
-    
-    // Determine target page
+    const { slug } = getCurrentPageInfo();
     let targetPage;
-    
     if (lang === 'ar') {
-        // Switch to Arabic
-        if (basePage === 'index.html') {
-            targetPage = 'index-ar.html';
-        } else {
-            targetPage = basePage.replace('.html', '-ar.html');
-        }
+        targetPage = slug === 'index' ? 'index-ar.html' : `${slug}-ar.html`;
     } else {
-        // Switch to English
-        targetPage = basePage;
+        targetPage = slug === 'index' ? 'index.html' : `${slug}.html`;
     }
-    
-    // Redirect to target page
     window.location.href = targetPage;
 }
 
@@ -35,10 +32,7 @@ function switchLanguage(lang) {
 // ========================================
 
 function detectLanguage() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const isArabic = currentPage.includes('-ar');
-    
-    return isArabic ? 'ar' : 'en';
+    return getCurrentPageInfo().isArabic ? 'ar' : 'en';
 }
 
 // Update language button text based on current language

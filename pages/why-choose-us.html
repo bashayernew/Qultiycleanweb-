@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 Reasons Why We’re Better | Quality Clean</title>
+    <meta name="description" content="Discover 50 clear reasons that make Quality Clean the smarter choice for professional cleaning services.">
+    
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/quality_clean_green_logo_on_white.png" alt="Quality Clean Logo">
+                    </a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../about.html" class="nav-link">About</a></li>
+                    <li><a href="../services.html" class="nav-link">Services</a></li>
+                    <li><a href="../cleaning-types.html" class="nav-link">Types of Cleaning</a></li>
+                    <li><a href="../pages/why-choose-us.html" class="nav-link active">Why Us</a></li>
+                    <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                    <li class="lang-switch"><button class="lang-btn" onclick="switchLanguage('ar')">العربية</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <h1>50 Reasons Why We’re Better</h1>
+                <p>Clear advantages you’ll notice from day one</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reasons-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Sets Quality Clean Apart</h2>
+                <p class="section-subtitle">Measurable quality, modern methods, and real accountability</p>
+            </div>
+            <div class="reasons-toolbar" data-aos="fade-up">
+                <div class="toolbar-inner">
+                    <div class="toolbar-left">
+                        <div class="pill">Reliable QA</div>
+                        <div class="pill">Clear KPIs</div>
+                        <div class="pill">Eco‑First</div>
+                    </div>
+                    <div class="toolbar-right">
+                        <input id="reasonsSearch" type="search" placeholder="Search reasons..." aria-label="Search reasons" />
+                        <span class="result-count" id="resultCount"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reasons-grid" id="reasonsGrid"></div>
+            <div class="show-more-wrap" data-aos="fade-up">
+                <button id="showMoreBtn" class="btn btn-secondary show-more-btn">Show more</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to experience the difference?</h2>
+                <p>Let’s build a plan tailored to your site and standards.</p>
+                <a href="../contact.html" class="btn btn-primary btn-large">Get a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../images/qulitycleanlogo-removebg-preview.png" alt="Quality Clean Logo">
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quality Clean</h3>
+                    <p>Professional cleaning services with a commitment to excellence, sustainability, and customer satisfaction.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li>📍 Mirgab, Kuwait</li>
+                        <li>📞 +965 22396999</li>
+                        <li>📧 info@qualityclean.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Quality Clean. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/lang-toggle.js"></script>
+    <script>
+        AOS.init({ duration: 900, once: true, offset: 80 });
+
+        const reasons = [
+            'Certified teams trained on international SOPs',
+            'Documented quality checks after every visit',
+            'Site-specific cleaning plans and schedules',
+            'Eco-friendly, high-performance products',
+            'Advanced equipment for faster, safer results',
+            'Transparent pricing with no hidden fees',
+            'Dedicated account manager for your site',
+            '24/7 response for urgent requests',
+            'Digital reports with photos and timestamps',
+            'Risk assessments and method statements (RAMS)',
+            'PPE compliance and HSE-first culture',
+            'Cross-checked staff background and training',
+            'Color-coded tools to prevent cross-contamination',
+            'HEPA filtration for better indoor air quality',
+            'Microfiber system to capture fine dust',
+            'Touchpoint disinfection protocols',
+            'Agile team scaling for peak periods',
+            'Multi-sector expertise (commercial to industrial)',
+            'Post-inspection rework at no additional cost',
+            'Clear SLAs and measurable KPIs',
+            'Low-water techniques to reduce waste',
+            'Residue-free processes for sensitive surfaces',
+            'Quiet operations to minimize disruption',
+            'Secure keyholding and access procedures',
+            'Onboarding playbook tailored to your facility',
+            'Periodic deep-clean options built-in',
+            'Safety data sheets available on request',
+            'Barcode/QR tracking for tasks and rooms',
+            'Uniformed teams with visible ID badges',
+            'Reliable attendance and time tracking',
+            'Proactive maintenance recommendations',
+            'Green purchasing policy and recycling',
+            'Anti-allergen processes for sensitive areas',
+            'Specialized methods for high-traffic zones',
+            'Industrial-grade solutions for heavy soils',
+            'Real-time communication channel with the crew',
+            'Consistent supervisor presence on site',
+            'Regular review meetings and improvements',
+            'Insurance coverage for added peace of mind',
+            'Third-party audit readiness support',
+            'Emergency spill response readiness',
+            'Secure handling of sensitive areas',
+            'Strict key/asset sign-off procedures',
+            'Flexible contracts that grow with you',
+            'Local knowledge, international standards',
+            'Detailed handover at shift end',
+            'Repeatable results through checklists',
+            'Client feedback loop built into workflow',
+            'Zero-damage ethos on all surfaces',
+            'On-time, every time culture',
+            'We care about your reputation as much as ours'
+        ];
+
+        const grid = document.getElementById('reasonsGrid');
+        const search = document.getElementById('reasonsSearch');
+        const resultCount = document.getElementById('resultCount');
+        const showMoreBtn = document.getElementById('showMoreBtn');
+
+        let visibleCount = 12;
+        let currentList = reasons.slice();
+
+        function render(list) {
+            const slice = list.slice(0, visibleCount);
+            grid.innerHTML = slice.map((text, idx) => `
+                <div class="reason-card" data-aos="fade-up" data-aos-delay="${(idx % 10) * 40}">
+                    <div class="reason-badge">${String(idx + 1).padStart(2,'0')}</div>
+                    <div class="reason-head">
+                        <div class="reason-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                        </div>
+                        <h3>${text}</h3>
+                    </div>
+                </div>
+            `).join('');
+
+            if (resultCount) {
+                resultCount.textContent = `${Math.min(visibleCount, list.length)} / ${list.length}`;
+            }
+            if (showMoreBtn) {
+                showMoreBtn.style.display = visibleCount >= list.length ? 'none' : 'inline-block';
+            }
+        }
+
+        function applySearch(query) {
+            const q = query.trim().toLowerCase();
+            currentList = q ? reasons.filter(r => r.toLowerCase().includes(q)) : reasons.slice();
+            visibleCount = q ? currentList.length : 12;
+            render(currentList);
+        }
+
+        search && search.addEventListener('input', (e) => applySearch(e.target.value));
+        showMoreBtn && showMoreBtn.addEventListener('click', () => {
+            visibleCount += 12;
+            render(currentList);
+        });
+
+        render(currentList);
+    </script>
+
+    <style>
+        .page-header {
+            background:
+                radial-gradient(1200px 300px at 100% -100%, rgba(255,255,255,0.18) 0%, transparent 70%),
+                linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+            padding: 150px 0 80px;
+            margin-top: 70px;
+            color: var(--white);
+            text-align: center;
+        }
+        .reasons-section { background: var(--light-gray); }
+        .reasons-toolbar { background:#fff; border:1px solid rgba(0,0,0,.06); border-radius:14px; padding:10px; box-shadow:0 6px 16px rgba(0,0,0,.06); margin-bottom: 10px; }
+        .toolbar-inner { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap }
+        .pill { display:inline-flex; align-items:center; padding:8px 12px; background: #f8fafc; border:1px solid #e5e7eb; border-radius:999px; color:#111827; font-weight:600 }
+        .toolbar-right { display:flex; align-items:center; gap:10px }
+        .reasons-toolbar input[type="search"] { padding:10px 12px; border:1px solid #e5e7eb; border-radius:10px; min-width:240px }
+        .result-count { color: var(--gray); font-weight:600 }
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .show-more-wrap { text-align:center; margin-top: 18px }
+        .show-more-btn { padding: 10px 18px }
+        .reason-card {
+            position: relative;
+            padding: 18px 16px;
+            border-radius: 12px;
+            background: #fff;
+            border: 1px solid #e5e7eb; /* Tailwind neutral-200 */
+            box-shadow: none;
+            transition: transform .2s ease, border-color .2s ease;
+            min-height: 96px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .reason-card:hover { transform: translateY(-3px); border-color: #d1d5db; }
+        .reason-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: transparent;
+            color: var(--gray);
+            border-radius: 0;
+            padding: 0;
+            font-weight: 600;
+            font-size: .8rem;
+            box-shadow: none;
+        }
+        .reason-head { display:flex; align-items:flex-start; gap:12px }
+        .reason-icon { width: 28px; height: 28px; border-radius: 50%; display:flex; align-items:center; justify-content:center; color: var(--primary-green); background: transparent; box-shadow: inset 0 0 0 1px #e5e7eb }
+        .reason-card h3 { font-size: 1rem; color: var(--dark-gray); line-height: 1.65; margin: 0; font-weight: 600 }
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 2rem; }
+            .reason-card { min-height: 110px; }
+            .toolbar-inner { flex-direction: column; align-items: stretch }
+            .reasons-toolbar input[type="search"] { width: 100%; min-width: 0 }
+        }
+    </style>
+</body>
+</html>
+
+

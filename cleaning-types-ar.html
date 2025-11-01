@@ -28,7 +28,7 @@
             <nav class="navbar">
                 <div class="logo">
                     <a href="index-ar.html">
-                        <img src="../images/qulitycleanlogo-removebg-preview.png" alt="كواليتي كلين">
+                        <img src="../images/quality_clean_green_logo_on_white.png" alt="كواليتي كلين">
                     </a>
                 </div>
                 
@@ -39,14 +39,13 @@
                 </div>
                 
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index-ar.html">الرئيسية</a></li>
-                    <li><a href="about-ar.html">من نحن</a></li>
-                    <li><a href="services-ar.html">الخدمات</a></li>
-                    <li><a href="cleaning-types-ar.html" class="active">أنواع التنظيف</a></li>
-                    <li><a href="index-ar.html#sectors">القطاعات</a></li>
-                    <li><a href="index-ar.html#projects">المشاريع</a></li>
-                    <li><a href="contact-ar.html">اتصل بنا</a></li>
-                    <li><a href="cleaning-types.html" class="lang-toggle">English</a></li>
+                    <li><a href="services-ar.html" class="nav-link">الخدمات</a></li>
+                    <li><a href="cleaning-types-ar.html" class="nav-link active">أنواع التنظيف</a></li>
+                    <li><a href="pages/why-choose-us-ar.html" class="nav-link">لماذا نحن</a></li>
+                    <li><a href="contact-ar.html" class="nav-link">اتصل بنا</a></li>
+                    <li class="lang-switch">
+                        <button class="lang-btn" onclick="switchLanguage('en')">English</button>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -55,11 +54,7 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <div class="breadcrumb">
-                <a href="index-ar.html">الرئيسية</a>
-                <span>/</span>
-                <span>أنواع التنظيف</span>
-            </div>
+            
             <h1>أنواع التنظيف</h1>
             <p class="page-subtitle">حلول تنظيف احترافية مصممة لتلبية احتياجاتك المحددة</p>
         </div>
@@ -75,199 +70,212 @@
         </div>
     </section>
 
-    <!-- Commercial Cleaning -->
-    <section class="cleaning-type" id="commercial">
+    <!-- Steam Cleaning -->
+    <section class="cleaning-type" id="steam">
         <div class="container">
             <div class="cleaning-content" data-aos="fade-up">
                 <div class="cleaning-text">
-                    <div class="cleaning-badge">المكاتب والأعمال</div>
-                    <h3>التنظيف التجاري</h3>
-                    <p class="cleaning-description">خدمات تنظيف مكاتب احترافية تحافظ على بيئة عمل نظيفة لعمليات عملك.</p>
+                    <div class="cleaning-badge">بدون مواد كيميائية</div>
+                    <h3>التنظيف بالبخار</h3>
+                    <p class="cleaning-description">تنظيف بالبخار فائق السخونة يعقم وينظف دون مواد كيميائية، مثالي للبيئات الحساسة.</p>
                     
                     <div class="cleaning-features">
-                        <h4>ما ننظفه:</h4>
+                        <h4>ما نقوم بتنظيفه:</h4>
                         <ul>
-                            <li>✓ مساحات المكاتب ومحطات العمل</li>
-                            <li>✓ قاعات الاجتماعات والاجتماعات</li>
-                            <li>✓ مناطق الاستقبال والردهة</li>
-                            <li>✓ دورات المياه وغرف الاستراحة</li>
-                            <li>✓ النوافذ والأسطح الزجاجية</li>
-                            <li>✓ صيانة السجاد والأرضيات</li>
+                            <li>✓ أرضيات المنازل والسجاد</li>
+                            <li>✓ التعقيم في المستشفيات</li>
+                            <li>✓ مقصورات السيارات والمحركات</li>
+                            <li>✓ الفنادق والمطاعم</li>
+                            <li>✓ تنظيف عميق للمطابخ</li>
+                            <li>✓ الستائر والمفروشات</li>
                         </ul>
                     </div>
                     
                     <div class="cleaning-benefits">
                         <h4>الفوائد:</h4>
-                        <p>تحسين إنتاجية الموظفين، تعزيز الصورة المهنية، وبيئة عمل صحية مع التعقيم المنتظم.</p>
+                        <p>صديق للبيئة (ماء فقط)، يقتل البكتيريا بفعالية، يصل إلى الزوايا الضيقة، يوفر الوقت والجهد، مناسب لمرضى الحساسية.</p>
                     </div>
                 </div>
                 <div class="cleaning-image">
-                    <img src="../images/commercial-cleaning.png" alt="خدمات تنظيف المكاتب التجارية" loading="lazy">
+                    <video class="cleaning-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="../images/steam%20blaste%20cleaning%20wall.mp4" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Industrial Cleaning -->
-    <section class="cleaning-type alt-bg" id="industrial">
+    <!-- Dry Ice Blasting -->
+    <section class="cleaning-type alt-bg" id="dry-ice">
         <div class="container">
             <div class="cleaning-content reverse" data-aos="fade-up">
                 <div class="cleaning-text">
-                    <div class="cleaning-badge">التصنيع والإنتاج</div>
-                    <h3>التنظيف الصناعي</h3>
-                    <p class="cleaning-description">حلول تنظيف قوية للمرافق الصناعية والمستودعات والمجمعات الصناعية.</p>
+                    <div class="cleaning-badge">بدون مخلفات</div>
+                    <h3>التنظيف بالثلج الجاف</h3>
+                    <p class="cleaning-description">تقنية تنظيف باستخدام حبيبات ثاني أكسيد الكربون الصلبة تزيل الملوثات دون أي بقايا أو نفايات ثانوية.</p>
                     
                     <div class="cleaning-features">
-                        <h4>ما ننظفه:</h4>
+                        <h4>ما نقوم بتنظيفه:</h4>
                         <ul>
-                            <li>✓ أرضيات ومعدات التصنيع</li>
-                            <li>✓ مناطق التخزين في المستودعات</li>
-                            <li>✓ خطوط الإنتاج والآلات</li>
-                            <li>✓ أنظمة التهوية الصناعية</li>
-                            <li>✓ أرصفة التحميل ومناطق الشحن</li>
-                            <li>✓ الآلات الثقيلة والأدوات</li>
+                            <li>✓ الآلات الصناعية دون تفكيك</li>
+                            <li>✓ المحركات ووحدات القدرة</li>
+                            <li>✓ لوحات الكهرباء والإلكترونيات</li>
+                            <li>✓ خطوط إنتاج المواد الغذائية</li>
+                            <li>✓ قوالب البلاستيك والمطاط</li>
+                            <li>✓ واجهات المباني والسطوح الحجرية</li>
                         </ul>
                     </div>
                     
                     <div class="cleaning-benefits">
                         <h4>الفوائد:</h4>
-                        <p>تعزيز الامتثال للسلامة، إطالة عمر المعدات، تحسين الكفاءة، والحفاظ على معايير الإنتاج.</p>
+                        <p>لا نفايات ثانوية، غير موصل للكهرباء، خالٍ من الرطوبة، يحافظ على السطح، صديق للبيئة ويقلل وقت التفكيك.</p>
                     </div>
                 </div>
                 <div class="cleaning-image">
-                    <img src="../images/industrial-cleaning.jpg" alt="خدمات التنظيف الصناعي" loading="lazy">
+                    <video class="cleaning-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="../images/dry%20ice%20steel%20cleaning%20.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Residential Cleaning -->
-    <section class="cleaning-type" id="residential">
+    <!-- Soda Blasting -->
+    <section class="cleaning-type" id="soda">
         <div class="container">
             <div class="cleaning-content" data-aos="fade-up">
                 <div class="cleaning-text">
-                    <div class="cleaning-badge">المنزل والمعيشة</div>
-                    <h3>التنظيف السكني</h3>
-                    <p class="cleaning-description">خدمات تنظيف منزلية شاملة تخلق بيئة معيشة مريحة وصحية لعائلتك.</p>
+                    <div class="cleaning-badge">لطيف وآمن</div>
+                    <h3>التنظيف بالصودا</h3>
+                    <p class="cleaning-description">وسيط قلوي لطيف يرفع الملوثات دون إتلاف المواد الحساسة، مثالي لأعمال الترميم.</p>
                     
                     <div class="cleaning-features">
-                        <h4>ما ننظفه:</h4>
+                        <h4>ما نقوم بتنظيفه:</h4>
                         <ul>
-                            <li>✓ غرف المعيشة وغرف النوم</li>
-                            <li>✓ المطابخ ومناطق تناول الطعام</li>
-                            <li>✓ دورات المياه وغرف الغسيل</li>
-                            <li>✓ النوافذ والمرايا</li>
-                            <li>✓ الأثاث والأقمشة</li>
-                            <li>✓ المساحات الخارجية والشرفات</li>
+                            <li>✓ ترميم آثار الحريق والدخان</li>
+                            <li>✓ الألمنيوم والمعادن اللينة</li>
+                            <li>✓ الزجاج والألياف الزجاجية</li>
+                            <li>✓ الأخشاب اللينة والمواد الحساسة</li>
+                            <li>✓ إزالة الطلاء عن الأجزاء الدقيقة</li>
+                            <li>✓ ترميم السيارات</li>
                         </ul>
                     </div>
                     
                     <div class="cleaning-benefits">
                         <h4>الفوائد:</h4>
-                        <p>مزيد من الوقت للعائلة والأنشطة الشخصية، بيئة خالية من الحساسية، وراحة البال مع النتائج الاحترافية.</p>
+                        <p>آمن على الأسطح، حرارة منخفضة، تنظيف سهل، فعال ولطيف، غير سام وقابل للتحلل.</p>
                     </div>
                 </div>
                 <div class="cleaning-image">
-                    <img src="../images/placeholder.webp" alt="خدمات التنظيف المنزلي" loading="lazy">
+                    <video class="cleaning-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="../images/soda%20blasting%20car%20cleaning%20.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Specialized Cleaning -->
-    <section class="cleaning-type alt-bg" id="specialized">
+    <!-- Laser Cleaning -->
+    <section class="cleaning-type alt-bg" id="laser">
         <div class="container">
             <div class="cleaning-content reverse" data-aos="fade-up">
                 <div class="cleaning-text">
-                    <div class="cleaning-badge">حلول متخصصة</div>
-                    <h3>التنظيف المتخصص</h3>
-                    <p class="cleaning-description">تقنيات تنظيف متقدمة باستخدام معدات متطورة ومنتجات صديقة للبيئة للمهام التنظيفية الصعبة.</p>
+                    <div class="cleaning-badge">تقنية دقيقة</div>
+                    <h3>التنظيف بالليزر</h3>
+                    <p class="cleaning-description">تقنية إزالة بالليزر تزيل الصدأ والدهان والأكاسيد والملوثات بدقة ودون مواد كيميائية.</p>
                     
                     <div class="cleaning-features">
-                        <h4>ما ننظفه:</h4>
+                        <h4>ما نقوم بتنظيفه:</h4>
                         <ul>
-                            <li>✓ المرافق الطبية والرعاية الصحية</li>
-                            <li>✓ المؤسسات التعليمية</li>
-                            <li>✓ مؤسسات تقديم الطعام</li>
-                            <li>✓ مراكز البيانات وغرف الخوادم</li>
-                            <li>✓ تنظيف ما بعد البناء</li>
-                            <li>✓ استعادة الطوارئ والكوارث</li>
+                            <li>✓ إزالة الصدأ من المعادن</li>
+                            <li>✓ ترميم الآثار والمواقع التاريخية</li>
+                            <li>✓ القوالب والأدوات الدقيقة</li>
+                            <li>✓ الطائرات والآلات</li>
+                            <li>✓ ترميم الحجر والتماثيل</li>
+                            <li>✓ إزالة الدهانات والشحوم الصناعية</li>
                         </ul>
                     </div>
                     
                     <div class="cleaning-benefits">
                         <h4>الفوائد:</h4>
-                        <p>خبرة متخصصة في الصناعة، الامتثال للوائح، معدات متخصصة، وبروتوكولات تنظيف مخصصة.</p>
+                        <p>صديق للبيئة (بدون مواد كيميائية)، بلا تآكل للسطح، دقة عالية مع تحكم بالعمق، سريع وآمن للمناطق الحساسة.</p>
                     </div>
                 </div>
                 <div class="cleaning-image">
-                    <img src="../images/cleaning-equipment.jpg" alt="معدات وخدمات التنظيف المتخصصة" loading="lazy">
+                    <video class="cleaning-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="../images/laser%20blasting%20wood%20cleaning.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Eco-Friendly Cleaning -->
-    <section class="cleaning-type" id="eco-friendly">
+    <!-- Glass Bead Blasting -->
+    <section class="cleaning-type" id="glass-bead">
         <div class="container">
             <div class="cleaning-content" data-aos="fade-up">
                 <div class="cleaning-text">
-                    <div class="cleaning-badge">حلول خضراء</div>
-                    <h3>التنظيف الصديق للبيئة</h3>
-                    <p class="cleaning-description">خدمات تنظيف واعية بيئياً تحمي صحتك والكوكب دون المساس بالنتائج.</p>
+                    <div class="cleaning-badge">تشطيب ناعم</div>
+                    <h3>التنظيف بحبيبات الزجاج</h3>
+                    <p class="cleaning-description">استخدام حبيبات زجاجية كروية لإعطاء تشطيب ساتاني ناعم يعزز المتانة والجودة الشكلية.</p>
                     
                     <div class="cleaning-features">
-                        <h4>ما نستخدمه:</h4>
+                        <h4>ما نقوم بتنظيفه:</h4>
                         <ul>
-                            <li>✓ منتجات تنظيف قابلة للتحلل</li>
-                            <li>✓ معقمات غير سامة</li>
-                            <li>✓ أقمشة تنظيف من الألياف الدقيقة</li>
-                            <li>✓ أنظمة ترشيح HEPA</li>
-                            <li>✓ تقنيات توفير المياه</li>
-                            <li>✓ تغليف مستدام</li>
+                            <li>✓ الأسطح المصنوعة من الستانلس ستيل</li>
+                            <li>✓ القوالب والأجزاء الدقيقة</li>
+                            <li>✓ إزالة تغير اللون والأكسدة</li>
+                            <li>✓ تطبيقات التشطيب الجمالي</li>
+                            <li>✓ تحضير الأسطح للطلاء</li>
+                            <li>✓ أجزاء السيارات والطيران</li>
                         </ul>
                     </div>
                     
                     <div class="cleaning-benefits">
                         <h4>الفوائد:</h4>
-                        <p>آمن للأطفال والحيوانات الأليفة، تأثير بيئي منخفض، تحسين جودة الهواء الداخلي، وتنظيف خالي من مسببات الحساسية.</p>
+                        <p>تشطيب موحد ناعم، يعزز المتانة، نتائج متسقة قابلة للتكرار، مظهر جمالي، إجهاد انضغاطي للسطح.</p>
                     </div>
                 </div>
                 <div class="cleaning-image">
-                    <img src="../images/eco-products.png" alt="منتجات وخدمات التنظيف الصديقة للبيئة" loading="lazy">
+                    <video class="cleaning-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="../images/glass%20bead%20blasting%20.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Deep Cleaning -->
-    <section class="cleaning-type alt-bg" id="deep-cleaning">
+    <!-- Abrasive Blasting -->
+    <section class="cleaning-type alt-bg" id="abrasive">
         <div class="container">
             <div class="cleaning-content reverse" data-aos="fade-up">
                 <div class="cleaning-text">
-                    <div class="cleaning-badge">خدمة مكثفة</div>
-                    <h3>التنظيف العميق</h3>
-                    <p class="cleaning-description">خدمة تنظيف شاملة تتجاوز الصيانة العادية لمعالجة كل تفصيل ومنطقة مخفية.</p>
+                    <div class="cleaning-badge">مهام ثقيلة</div>
+                    <h3>التنظيف بالرمل</h3>
+                    <p class="cleaning-description">سفع عالي الطاقة باستخدام وسائط ممتازة مثل الجارنيت للمهام الشاقة وتحضير الأسطح.</p>
                     
                     <div class="cleaning-features">
-                        <h4>ما نقوم به:</h4>
+                        <h4>ما نقوم بتنظيفه:</h4>
                         <ul>
-                            <li>✓ تنظيف مفصل لجميع الأسطح</li>
-                            <li>✓ تنظيف داخل الأجهزة</li>
-                            <li>✓ تنظيف القوالب والزخارف</li>
-                            <li>✓ تنظيف تركيبات الإضاءة والمراوح</li>
-                            <li>✓ تنظيف داخل الخزانات</li>
-                            <li>✓ الاهتمام بالمناطق التي يصعب الوصول إليها</li>
+                            <li>✓ الصدأ الثقيل والقشور والطلاءات</li>
+                            <li>✓ الهياكل الفولاذية والخزانات</li>
+                            <li>✓ أسطح تحضير الطلاء</li>
+                            <li>✓ المعدات الصناعية</li>
+                            <li>✓ الخرسانة والبناء</li>
+                            <li>✓ السفن والتطبيقات البحرية</li>
                         </ul>
                     </div>
                     
                     <div class="cleaning-benefits">
                         <h4>الفوائد:</h4>
-                        <p>نتائج نظيفة تماماً، تحسين النظافة، إطالة الوقت بين جلسات التنظيف، والاهتمام بكل تفصيل.</p>
+                        <p>إنتاجية عالية، قدرة إزالة قوية، بروفايل سطح قوي، موثوقية صناعية، فعالية من حيث التكلفة للمشروعات الكبيرة.</p>
                     </div>
                 </div>
                 <div class="cleaning-image">
-                    <img src="../images/placeholder.webp" alt="خدمات التنظيف العميق" loading="lazy">
+                    <video class="cleaning-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="../images/abrasive%20cleaning%20.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -291,11 +299,23 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <div class="footer-logo">
+                <img src="../images/qulitycleanlogo-removebg-preview.png" alt="شعار كواليتي كلين">
+            </div>
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="../images/qulitycleanlogo-removebg-preview.png" alt="كواليتي كلين" />
-                        <p>حلول التنظيف الاحترافية لأعمالك</p>
+                    <h3>كواليتي كلين</h3>
+                    <p>خدمات تنظيف احترافية مع التزام بالتميز والاستدامة ورضا العملاء.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/quality.clean.kw" target="_blank" aria-label="إنستجرام" class="social-link instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@Qulity.clean8" target="_blank" aria-label="تيك توك" class="social-link tiktok">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+                        </a>
+                        <a href="https://wa.me/96597759069" target="_blank" aria-label="واتساب" class="social-link whatsapp">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+                        </a>
                     </div>
                 </div>
                 
@@ -313,50 +333,23 @@
                 <div class="footer-section">
                     <h4>أنواع التنظيف</h4>
                     <ul>
-                        <li><a href="#commercial">التنظيف التجاري</a></li>
-                        <li><a href="#industrial">التنظيف الصناعي</a></li>
-                        <li><a href="#residential">التنظيف السكني</a></li>
-                        <li><a href="#specialized">التنظيف المتخصص</a></li>
-                        <li><a href="#eco-friendly">التنظيف الصديق للبيئة</a></li>
-                        <li><a href="#deep-cleaning">التنظيف العميق</a></li>
+                        <li><a href="#steam">التنظيف بالبخار</a></li>
+                        <li><a href="#dry-ice">التنظيف بالثلج الجاف</a></li>
+                        <li><a href="#soda">التنظيف بالصودا</a></li>
+                        <li><a href="#laser">التنظيف بالليزر</a></li>
+                        <li><a href="#glass-bead">التنظيف بحبيبات الزجاج</a></li>
+                        <li><a href="#abrasive">التنظيف بالرمل</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>معلومات الاتصال</h4>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div>
-                                <h4>الموقع</h4>
-                                <p>المرقاب، الكويت</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">📞</div>
-                            <div>
-                                <h4>اتصل بنا</h4>
-                                <a href="tel:+96522396999">22396999 965+</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">📧</div>
-                            <div>
-                                <h4>راسلنا</h4>
-                                <a href="mailto:info@qualityclean.com">info@qualityclean.com</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">💬</div>
-                            <div>
-                                <h4>واتساب</h4>
-                                <a href="https://wa.me/96597759069" target="_blank">تحدث معنا</a>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="contact-info">
+                        <li>📍 المرقاب، الكويت</li>
+                        <li dir="ltr">📞 22396999 965+</li>
+                        <li dir="ltr">📧 info@qualityclean.com</li>
+                        <li>🕒 الإثنين-الجمعة: 8 ص - 6 م</li>
+                    </ul>
                 </div>
             </div>
             
@@ -376,11 +369,16 @@
     <script src="../js/lang-toggle.js"></script>
     
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
+        AOS.init({ duration: 1000, once: true, offset: 100 });
+        // Fade-in for sections
+        (function(){
+            const targets = document.querySelectorAll('.cleaning-content');
+            targets.forEach(el => el.classList.add('reveal'));
+            const io = new IntersectionObserver((entries)=>{
+                entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target);} });
+            }, { threshold: 0.15 });
+            targets.forEach(t=> io.observe(t));
+        })();
     </script>
     
     <style>
@@ -447,20 +445,13 @@
         }
         
         /* Cleaning Types */
-        .cleaning-type {
-            padding: 80px 0;
-        }
+        .cleaning-type { padding: 32px 40px; }
         
         .cleaning-type.alt-bg {
             background-color: var(--light-gray);
         }
         
-        .cleaning-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
+        .cleaning-content { display:grid; grid-template-columns: 1fr 1fr; gap:32px; align-items:center; }
         
         .cleaning-content.reverse {
             direction: rtl;
@@ -482,31 +473,14 @@
             font-family: 'Cairo', sans-serif;
         }
         
-        .cleaning-text h3 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-            color: var(--dark-gray);
-            font-family: 'Cairo', sans-serif;
-        }
+        .cleaning-text { max-width: 600px; }
+        .cleaning-text h3 { font-size: 2rem; font-weight: 700; margin-bottom: 20px; color: var(--dark-gray); font-family: 'Cairo', sans-serif; }
         
-        .cleaning-description {
-            font-size: 1.1rem;
-            color: var(--gray);
-            margin-bottom: 30px;
-            line-height: 1.7;
-            font-family: 'Cairo', sans-serif;
-        }
+        .cleaning-description, .cleaning-text p { font-size: 1.05rem; line-height: 1.6; color: #333; margin-bottom: 24px; font-family: 'Cairo', sans-serif; }
         
-        .cleaning-features {
-            margin: 30px 0;
-        }
+        .cleaning-features { margin: 20px 0; }
         
-        .cleaning-features h4 {
-            color: var(--primary-green);
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            font-family: 'Cairo', sans-serif;
-        }
+        .cleaning-features h4 { color: #2ecc71; margin-bottom: 15px; font-size: 1.2rem; font-family: 'Cairo', sans-serif; }
         
         .cleaning-features ul {
             list-style: none;
@@ -520,23 +494,13 @@
             font-family: 'Cairo', sans-serif;
         }
         
-        .cleaning-benefits {
-            background: var(--light-gray);
-            padding: 20px;
-            border-radius: var(--radius-md);
-            margin: 20px 0;
-        }
+        .cleaning-benefits { background: var(--light-gray); padding: 18px; border-radius: var(--radius-md); margin: 14px 0; }
         
         .cleaning-type.alt-bg .cleaning-benefits {
             background: var(--white);
         }
         
-        .cleaning-benefits h4 {
-            color: var(--primary-green);
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-            font-family: 'Cairo', sans-serif;
-        }
+        .cleaning-benefits h4 { color: #2ecc71; margin-bottom: 10px; font-size: 1.1rem; font-family: 'Cairo', sans-serif; }
         
         .cleaning-benefits p {
             color: var(--gray);
@@ -545,34 +509,26 @@
             font-family: 'Cairo', sans-serif;
         }
         
-        .cleaning-image img {
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-lg);
-            width: 100%;
-            aspect-ratio: 16/9;
-            object-fit: cover;
-        }
+        .cleaning-image { align-self: center; }
+        .cleaning-image img, .cleaning-image video { border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); width: 100%; height: 300px; object-fit: cover; display:block; }
         
         /* Responsive Design */
-        @media (max-width: 992px) {
-            .cleaning-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-            
-            .cleaning-content.reverse {
-                direction: ltr;
-            }
-        }
+        @media (max-width: 992px) { .cleaning-content { grid-template-columns: 1fr; gap: 24px; } .cleaning-content.reverse { direction: ltr; } }
         
         @media (max-width: 768px) {
             .page-header h1 {
                 font-size: 2rem;
             }
             
-            .cleaning-text h3 {
-                font-size: 1.8rem;
-            }
+            .cleaning-text h3 { font-size: 1.8rem; }
+            .cleaning-type { padding: 32px 20px; }
+            .cleaning-text { order: 1; }
+            .cleaning-image { order: 2; }
+        }
+
+        /* Fade-in animation */
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+        .reveal.show { opacity: 1; transform: none; }
             
             .section-header h2 {
                 font-size: 2rem;

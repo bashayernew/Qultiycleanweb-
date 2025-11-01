@@ -60,8 +60,17 @@ h1, h2, h3, h4, h5, h6 {
    Core Values Section Adjustments
    ======================================== */
 
+.values-grid-wrapper {
+    direction: ltr; /* Keep scrolling direction LTR even in RTL mode */
+}
+
 .values-grid {
-    /* Keep grid layout same, only text is RTL */
+    direction: ltr; /* Keep card layout LTR */
+}
+
+.value-card {
+    direction: rtl; /* Text inside cards is RTL */
+    text-align: right;
 }
 
 /* ========================================
@@ -700,5 +709,22 @@ p + p {
 
 .text-left-ar {
     text-align: left;
+}
+
+/* ========================================
+   Cleaning Types Homepage - RTL
+   ======================================== */
+
+.cleaning-types-home {
+    direction: rtl;
+}
+
+.cleaning-card-front,
+.cleaning-card-back {
+    text-align: center;
+}
+
+.cleaning-badge {
+    display: inline-block;
 }
 

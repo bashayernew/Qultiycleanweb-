@@ -26,7 +26,7 @@ function generateContent(filename, serviceSlug) {
   const contentMap = {
     'dry-ice': {
       alt_en: `Dry ice blasting equipment and process images`,
-      alt_ar: `صور معدات وعملية السفع بالثلج الجاف`,
+      alt_ar: `صور معدات وعملية التنظيف بالثلج الجاف`,
       caption_en: `Eco-friendly dry ice cleaning removes contaminants without residue`,
       caption_ar: `تنظيف بالثلج الجاف صديق للبيئة يزيل الملوثات دون مخلفات`
     },
@@ -38,9 +38,9 @@ function generateContent(filename, serviceSlug) {
     },
     'soda': {
       alt_en: `Soda blasting equipment and applications`,
-      alt_ar: `معدات وتطبيقات السفع ببيكربونات الصوديوم`,
+      alt_ar: `معدات وتطبيقات التنظيف ببيكربونات الصوديوم`,
       caption_en: `Gentle soda blasting for delicate surfaces`,
-      caption_ar: `السفع ببيكربونات الصوديوم اللطيف للأسطح الحساسة`
+      caption_ar: `التنظيف ببيكربونات الصوديوم اللطيف للأسطح الحساسة`
     },
     'laser': {
       alt_en: `Laser cleaning technology and equipment`,
@@ -50,15 +50,15 @@ function generateContent(filename, serviceSlug) {
     },
     'glass-bead': {
       alt_en: `Glass bead blasting equipment and results`,
-      alt_ar: `معدات ونتائج السفع بالخرز الزجاجي`,
+      alt_ar: `معدات ونتائج التنظيف بالخرز الزجاجي`,
       caption_en: `Glass bead blasting creates smooth, uniform finishes`,
-      caption_ar: `السفع بالخرز الزجاجي ينتج أسطح ناعمة ومتسقة`
+      caption_ar: `التنظيف بالخرز الزجاجي ينتج أسطح ناعمة ومتسقة`
     },
     'abrasive': {
       alt_en: `Abrasive blasting equipment and applications`,
-      alt_ar: `معدات وتطبيقات السفع الكاشط`,
+      alt_ar: `معدات وتطبيقات التنظيف بالرمل`,
       caption_en: `Powerful abrasive blasting for tough cleaning jobs`,
-      caption_ar: `السفع الكاشط القوي للمهام التنظيفية الصعبة`
+      caption_ar: `التنظيف بالرمل القوي للمهام التنظيفية الصعبة`
     }
   };
 

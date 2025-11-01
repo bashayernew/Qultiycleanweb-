@@ -9,10 +9,10 @@
     <title>Quality Clean - Professional Cleaning Services</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
             <nav class="navbar">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="../images/qulitycleanlogo-removebg-preview.png" alt="Quality Clean Logo">
+                        <img src="images/quality_clean_green_logo_on_white.png" alt="Quality Clean Logo">
                     </a>
                 </div>
                 
@@ -44,8 +44,7 @@
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="cleaning-types.html" class="nav-link">Types of Cleaning</a></li>
-                    <li><a href="#sectors" class="nav-link">Sectors</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="pages/why-choose-us.html" class="nav-link">Why Us</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                     <li class="lang-switch">
                         <button class="lang-btn" onclick="switchLanguage('ar')">العربية</button>
@@ -58,7 +57,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop playsinline>
-            <source src="../images/Option1.mp4" type="video/mp4">
+            <source src="images/Option1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="hero-overlay"></div>
@@ -71,8 +70,138 @@
                 <a href="services.html" class="btn btn-secondary">Our Services</a>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <span></span>
+    </section>
+
+    <!-- Spacer to prevent section overlap -->
+    <div style="height: 80px; background: transparent;"></div>
+
+    <!-- Types of Cleaning Section -->
+    <section class="cleaning-types-home">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Types of Cleaning</h2>
+                <p class="section-subtitle">Professional Solutions for Every Surface</p>
+            </div>
+            
+            <div class="cleaning-grid">
+                <!-- Laser Cleaning -->
+                <div class="cleaning-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="cleaning-card-inner">
+                        <div class="cleaning-card-front">
+                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
+                                <!-- nozzle -->
+                                <rect x="28" y="10" width="8" height="10" rx="1"></rect>
+                                <rect x="24" y="20" width="16" height="6" rx="1"></rect>
+                                <rect x="26" y="26" width="12" height="6" rx="1"></rect>
+                                <rect x="28" y="32" width="8" height="6" rx="1"></rect>
+                                <!-- beam burst -->
+                                <polygon points="18,50 46,50 32,46"></polygon>
+                                <polygon points="26,52 38,52 32,56"></polygon>
+                            </svg>
+                            <h3>Laser Cleaning</h3>
+                            <span class="cleaning-badge">Precision</span>
+                        </div>
+                        <div class="cleaning-card-back">
+                            <h3>Laser Cleaning</h3>
+                            <p>State-of-the-art laser technology for precision cleaning without abrasives or chemicals.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dry Ice Cleaning -->
+                <div class="cleaning-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="cleaning-card-inner">
+                        <div class="cleaning-card-front">
+                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
+                                <!-- simple snowflake star -->
+                                <polygon points="32,14 36,22 45,24 36,26 32,34 28,26 19,24 28,22"/>
+                                <!-- ice blocks -->
+                                <rect x="14" y="38" width="16" height="10" rx="1"></rect>
+                                <rect x="34" y="38" width="16" height="10" rx="1"></rect>
+                            </svg>
+                            <h3>Dry Ice Blasting</h3>
+                            <span class="cleaning-badge">Residue-Free</span>
+                        </div>
+                        <div class="cleaning-card-back">
+                            <h3>Dry Ice Blasting</h3>
+                            <p>Revolutionary cleaning using solid CO₂ pellets that remove contaminants without leaving any residue.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soda Blasting -->
+                <div class="cleaning-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="cleaning-card-inner">
+                        <div class="cleaning-card-front">
+                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
+                                <circle cx="24" cy="24" r="8"/>
+                                <circle cx="40" cy="18" r="6"/>
+                                <circle cx="38" cy="34" r="5"/>
+                            </svg>
+                            <h3>Soda Blasting</h3>
+                            <span class="cleaning-badge">Gentle & Safe</span>
+                        </div>
+                        <div class="cleaning-card-back">
+                            <h3>Soda Blasting</h3>
+                            <p>Gentle alkaline media that lifts contaminants without harming delicate materials.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Glass Bead Blasting -->
+                <div class="cleaning-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="cleaning-card-inner">
+                        <div class="cleaning-card-front">
+                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
+                                <polygon points="32,10 50,26 32,54 14,26"/>
+                            </svg>
+                            <h3>Glass Bead Blasting</h3>
+                            <span class="cleaning-badge">Non-Abrasive</span>
+                        </div>
+                        <div class="cleaning-card-back">
+                            <h3>Glass Bead Blasting</h3>
+                            <p>Spherical glass beads for gentle cleaning that preserves surface integrity.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sand Blasting -->
+                <div class="cleaning-card" data-aos="flip-left" data-aos-delay="500">
+                    <div class="cleaning-card-inner">
+                        <div class="cleaning-card-front">
+                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
+                                <polygon points="10,50 32,26 54,50"/>
+                                <circle cx="22" cy="22" r="2"/>
+                                <circle cx="44" cy="20" r="2"/>
+                            </svg>
+                            <h3>Sand Blasting</h3>
+                            <span class="cleaning-badge">Heavy Duty</span>
+                        </div>
+                        <div class="cleaning-card-back">
+                            <h3>Sand Blasting</h3>
+                            <p>Powerful abrasive cleaning for removing heavy deposits and surface preparation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Steam Cleaning -->
+                <div class="cleaning-card" data-aos="flip-left" data-aos-delay="600">
+                    <div class="cleaning-card-inner">
+                        <div class="cleaning-card-front">
+                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
+                                <path d="M18 36c0-5 4-9 9-9 2 0 4 .6 5.6 1.7A9 9 0 0146 33c5 0 9 4 9 9H18"/>
+                                <path d="M14 44h30"/>
+                            </svg>
+                            <h3>Steam Cleaning</h3>
+                            <span class="cleaning-badge">Chemical-Free</span>
+                        </div>
+                        <div class="cleaning-card-back">
+                            <h3>Steam Cleaning</h3>
+                            <p>Superheated vapor cleaning that sanitizes and cleans without chemicals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -84,30 +213,69 @@
                 <p class="section-subtitle">Excellence in Every Aspect</p>
             </div>
             
+            <div class="values-grid-wrapper">
             <div class="values-grid">
-                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="value-image">
-                        <img src="../images/commercial-cleaning.png" alt="Clean Results">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2L13.09,8.26L21,9L17,14.14L18.18,21L12,17.77L5.82,21L7,14.14L3,9L10.91,8.26L12,2Z"/>
+                        </svg>
                     </div>
-                    <h3>Clean Results</h3>
-                    <p>Impeccable cleaning standards with attention to every detail. Our proven methods ensure spotless results every time.</p>
+                    <h3>Certified Professionals</h3>
+                    <p>Trained and certified teams following international standards.</p>
                 </div>
                 
-                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="value-image">
-                        <img src="../images/eco-products.png" alt="Green Impact">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
                     </div>
-                    <h3>Green Impact</h3>
-                    <p>Eco-friendly solutions that protect both your space and the environment. We use sustainable practices and green products.</p>
+                    <h3>Eco-Friendly Solutions</h3>
+                    <p>Green products and methods that protect people and the planet.</p>
                 </div>
                 
-                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="value-image">
-                        <img src="../images/team-work.jpg" alt="Trained Teams">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L7,5L12,9L17,5L12,1M7,9L12,13L17,9L12,5L7,9M7,17L12,21L17,17L12,13L7,17Z"/>
+                        </svg>
                     </div>
-                    <h3>Trained Teams</h3>
-                    <p>Highly skilled professionals who undergo rigorous training. Our certified team delivers excellence with every service.</p>
+                    <h3>Advanced Equipment</h3>
+                    <p>Modern tools deliver efficient, precise cleaning with minimal downtime.</p>
                 </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2L13.09,8.26L21,9L17,14.14L18.18,21L12,17.77L5.82,21L7,14.14L3,9L10.91,8.26L12,2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Customized Service</h3>
+                    <p>Tailored plans to match your site’s needs, budget, and schedule.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L8.5,7L1,8.5L8.5,16L12,23L15.5,16L23,8.5L15.5,7L12,1Z"/>
+                        </svg>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>Documented procedures and inspections ensure consistent results.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L7,5L12,9L17,5L12,1M7,9L12,13L17,9L12,5L7,9M7,17L12,21L17,17L12,13L7,17Z"/>
+                        </svg>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Flexible scheduling and rapid response whenever you need us.</p>
+                </div>
+                
+            </div>
             </div>
         </div>
     </section>
@@ -164,101 +332,59 @@
         </div>
     </section>
 
-    <!-- Safety & Environment Section -->
-    <section class="safety-environment">
-        <div class="container">
-            <div class="safety-content">
-                <div class="safety-text" data-aos="fade-right">
-                    <h2>Safety & Environment Care</h2>
-                    <p class="lead">Your safety and environmental responsibility are at the heart of everything we do.</p>
-                    
-                    <div class="safety-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h4>Safety First</h4>
-                                <p>All team members are equipped with proper PPE and follow strict safety protocols.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h4>Eco-Friendly Products</h4>
-                                <p>We exclusively use biodegradable, non-toxic cleaning solutions.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h4>Certified Standards</h4>
-                                <p>Compliance with international environmental and safety standards.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div>
-                                <h4>Waste Management</h4>
-                                <p>Responsible disposal and recycling practices in all our operations.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="safety-image" data-aos="fade-left">
-                    <img src="../images/safety-equipment.jpg" alt="Safety Equipment">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Gallery Section -->
-    <section class="projects" id="projects">
+<!-- Client Feedback Section -->
+    <section class="testimonials" id="feedback">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Our Recent Projects</h2>
-                <p class="section-subtitle">See Our Work in Action</p>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real feedback from satisfied partners</p>
             </div>
             
-            <div class="projects-grid">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="../images/service-showcase-1.png" alt="Commercial Cleaning Project">
-                        <div class="project-overlay">
-                            <h4>Commercial Office Tower</h4>
-                            <p>Complete office cleaning and maintenance</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">Quality Clean transformed our office — punctual, professional, and spotless results.</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">🏢</div>
+                        <div>
+                            <h4>Operations Manager</h4>
+                            <span>Commercial Office Tower</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="../images/service-showcase-2.png" alt="Industrial Cleaning Project">
-                        <div class="project-overlay">
-                            <h4>Industrial Facility</h4>
-                            <p>Deep cleaning and equipment maintenance</p>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">Their industrial team handled heavy equipment cleaning with zero downtime.</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">🏭</div>
+                        <div>
+                            <h4>Plant Supervisor</h4>
+                            <span>Industrial Facility</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="../images/service-showcase-3.png" alt="Healthcare Cleaning Project">
-                        <div class="project-overlay">
-                            <h4>Healthcare Facility</h4>
-                            <p>Medical-grade sanitization services</p>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">Impeccable hygiene standards and documentation — perfect for our audit.</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">🏥</div>
+                        <div>
+                            <h4>Facilities Director</h4>
+                            <span>Healthcare Facility</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-image">
-                        <img src="../images/service-showcase-4.png" alt="Specialized Cleaning Project">
-                        <div class="project-overlay">
-                            <h4>Retail Complex</h4>
-                            <p>High-traffic area maintenance</p>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">Fast response and flawless finish — our retail space looks brand new.</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">🛍️</div>
+                        <div>
+                            <h4>Retail Manager</h4>
+                            <span>Shopping Complex</span>
                         </div>
                     </div>
                 </div>
@@ -276,51 +402,107 @@
             
             <div class="sectors-grid">
                 <div class="sector-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="sector-card-inner">
+                        <div class="sector-card-front">
                     <div class="sector-icon">🏢</div>
+                            <h3>Commercial</h3>
+                        </div>
+                        <div class="sector-card-back">
                     <h3>Commercial</h3>
                     <p>Office buildings, retail spaces, and shopping centers</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="sector-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="sector-card-inner">
+                        <div class="sector-card-front">
                     <div class="sector-icon">🏭</div>
+                            <h3>Industrial</h3>
+                        </div>
+                        <div class="sector-card-back">
                     <h3>Industrial</h3>
                     <p>Factories, warehouses, and manufacturing facilities</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="sector-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="sector-card-inner">
+                        <div class="sector-card-front">
                     <div class="sector-icon">🏥</div>
+                            <h3>Healthcare</h3>
+                        </div>
+                        <div class="sector-card-back">
                     <h3>Healthcare</h3>
                     <p>Hospitals, clinics, and medical facilities</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="sector-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="sector-card-inner">
+                        <div class="sector-card-front">
                     <div class="sector-icon">🏨</div>
+                            <h3>Hospitality</h3>
+                        </div>
+                        <div class="sector-card-back">
                     <h3>Hospitality</h3>
                     <p>Hotels, resorts, and restaurants</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="sector-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="sector-card-inner">
+                        <div class="sector-card-front">
                     <div class="sector-icon">🏫</div>
+                            <h3>Education</h3>
+                        </div>
+                        <div class="sector-card-back">
                     <h3>Education</h3>
                     <p>Schools, universities, and training centers</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="sector-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="sector-card-inner">
+                        <div class="sector-card-front">
                     <div class="sector-icon">🏠</div>
+                            <h3>Residential</h3>
+                        </div>
+                        <div class="sector-card-back">
                     <h3>Residential</h3>
                     <p>Homes, apartments, and residential complexes</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="sector-card" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="sector-card-inner">
+                        <div class="sector-card-front">
                     <div class="sector-icon">🏗️</div>
+                            <h3>Construction</h3>
+                        </div>
+                        <div class="sector-card-back">
                     <h3>Construction</h3>
                     <p>Post-construction cleanup and site maintenance</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="sector-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="sector-card-inner">
+                        <div class="sector-card-front">
                     <div class="sector-icon">📦</div>
+                            <h3>Logistics & Warehousing</h3>
+                        </div>
+                        <div class="sector-card-back">
                     <h3>Logistics & Warehousing</h3>
                     <p>Distribution centers, storage facilities, and logistics hubs</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -334,30 +516,33 @@
                 <p>Contact us today for a free consultation and quote</p>
                 
                 <div class="contact-methods">
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h4>Call Us</h4>
-                            <a href="tel:+96522396999">+965 22396999</a>
+                    <a href="tel:+96522396999" class="contact-item" aria-label="Call Us">
+                        <div class="contact-icon" aria-hidden="true">
+                            <!-- Phone Icon -->
+                            <svg viewBox="0 0 24 24" class="icon-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V21a1 1 0 01-1 1C10.19 22 2 13.81 2 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/>
+                            </svg>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h4>Email Us</h4>
-                            <a href="mailto:info@qualityclean.com">info@qualityclean.com</a>
+                    <a href="mailto:info@qualityclean.com" class="contact-item" aria-label="Email Us">
+                        <div class="contact-icon" aria-hidden="true">
+                            <!-- Envelope Icon -->
+                            <svg viewBox="0 0 24 24" class="icon-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="contact-item">
-                        <div class="contact-icon">💬</div>
-                        <div>
-                            <h4>WhatsApp</h4>
-                            <a href="https://wa.me/96597759069" target="_blank">Chat with us</a>
+                    <a href="https://wa.me/96597759069" target="_blank" class="contact-item" aria-label="WhatsApp">
+                        <div class="contact-icon" aria-hidden="true">
+                            <!-- WhatsApp Icon -->
+                            <svg viewBox="0 0 32 32" class="icon-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <path d="M19.11 17.03c-.28-.14-1.64-.81-1.89-.9-.25-.09-.43-.14-.6.14-.18.27-.71.9-.87 1.08-.16.18-.32.21-.59.07-.27-.14-1.16-.43-2.21-1.36-.82-.73-1.37-1.62-1.52-1.89-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.46.09-.18.05-.35-.02-.49-.07-.14-.6-1.48-.82-2.03-.22-.53-.43-.46-.59-.47-.15-.01-.33-.01-.5-.01-.18 0-.46.07-.7.34-.24.27-.93.92-.93 2.24 0 1.32.95 2.6 1.08 2.78.13.18 1.87 2.89 4.54 4.05.63.28 1.13.44 1.52.56.64.2 1.22.18 1.68.11.51-.08 1.58-.65 1.81-1.27.22-.62.22-1.16.16-1.27-.07-.11-.24-.18-.52-.31z"/>
+                                <path d="M16 3C9.925 3 5 7.925 5 14c0 2.202.68 4.243 1.84 5.93L6 27l7.25-1.9A10.94 10.94 0 0016 25c6.075 0 11-4.925 11-11S22.075 3 16 3zm0 20a9 9 0 110-18 9 9 0 010 18z"/>
+                            </svg>
                         </div>
-                    </div>
-                    
+                    </a>
                 </div>
                 
                 <a href="contact.html" class="btn btn-primary btn-large">Get a Free Quote</a>
@@ -369,7 +554,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-logo">
-                <img src="../images/qulitycleanlogo-removebg-preview.png" alt="Quality Clean Logo">
+                <img src="images/qulitycleanlogo-removebg-preview.png" alt="Quality Clean Logo">
             </div>
             <div class="footer-content">
                 <div class="footer-section">
@@ -431,8 +616,8 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/lang-toggle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/lang-toggle.js"></script>
 </body>
 </html>
 

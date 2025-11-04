@@ -17,14 +17,62 @@ function getCurrentPageInfo() {
 }
 
 function switchLanguage(lang) {
-    const { slug } = getCurrentPageInfo();
-    let targetPage;
-    if (lang === 'ar') {
-        targetPage = slug === 'index' ? 'index-ar.html' : `${slug}-ar.html`;
-    } else {
-        targetPage = slug === 'index' ? 'index.html' : `${slug}.html`;
+    try {
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop() || 'index.html';
+        
+        // Remove query and hash
+        const pageName = currentPage.split('?')[0].split('#')[0];
+        
+        let targetPage;
+        
+        if (lang === 'ar') {
+            // Switch to Arabic version
+            if (pageName === 'index.html') {
+                targetPage = 'index-ar.html';
+            } else if (pageName.endsWith('-ar.html')) {
+                // Already Arabic, do nothing
+                console.log('Already on Arabic page');
+                return;
+            } else {
+                // Replace .html with -ar.html for other pages
+                targetPage = pageName.replace('.html', '-ar.html');
+            }
+        } else {
+            // Switch to English version
+            if (pageName === 'index-ar.html') {
+                targetPage = 'index.html';
+            } else if (!pageName.includes('-ar')) {
+                // Already English, do nothing
+                console.log('Already on English page');
+                return;
+            } else {
+                // Replace -ar.html with .html
+                targetPage = pageName.replace('-ar.html', '.html');
+            }
+        }
+        
+        // Navigate to target page
+        console.log('Switching language:', lang, 'to page:', targetPage);
+        window.location.href = targetPage;
+    } catch (error) {
+        console.error('Error switching language:', error);
+        // Fallback: manually construct the path
+        const currentPage = window.location.pathname;
+        if (lang === 'ar') {
+            if (currentPage.includes('index.html') && !currentPage.includes('index-ar.html')) {
+                window.location.href = 'index-ar.html';
+            } else if (currentPage.includes('about.html')) {
+                window.location.href = 'about-ar.html';
+            } else if (currentPage.includes('services.html')) {
+                window.location.href = 'services-ar.html';
+            } else if (currentPage.includes('contact.html')) {
+                window.location.href = 'contact-ar.html';
+            } else if (currentPage.includes('cleaning-types.html')) {
+                window.location.href = 'cleaning-types-ar.html';
+            }
+        }
     }
-    window.location.href = targetPage;
 }
 
 // ========================================
@@ -122,6 +170,19 @@ function setDirection(lang) {
 window.addEventListener('DOMContentLoaded', () => {
     const currentLang = detectLanguage();
     setDirection(currentLang);
+    
+    // Force RTL/LTR based on detected language
+    const html = document.documentElement;
+    if (currentLang === 'ar') {
+        html.setAttribute('dir', 'rtl');
+        html.setAttribute('lang', 'ar');
+        // Ensure UTF-8 encoding
+        document.charset = 'UTF-8';
+    } else {
+        html.setAttribute('dir', 'ltr');
+        html.setAttribute('lang', 'en');
+        document.charset = 'UTF-8';
+    }
 });
 
 // ========================================
@@ -221,4 +282,7 @@ window.LanguageToggle = {
     savePreference: saveLanguagePreference,
     getPreference: getLanguagePreference
 };
+
+// Make switchLanguage globally available
+window.switchLanguage = switchLanguage;
 

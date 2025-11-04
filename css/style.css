@@ -165,9 +165,9 @@ section {
 }
 
 .logo img {
-    height: 60px;
+    height: 80px;
     width: auto;
-    max-width: 200px;
+    max-width: 280px;
     background: transparent;
     padding: 0;
     border-radius: 0;
@@ -829,14 +829,24 @@ section {
 .testimonial-rating {
     color: var(--primary-green);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 0;
     margin-bottom: var(--spacing-sm);
+    display: flex;
+    gap: 4px;
+    align-items: center;
 }
 
 .testimonial-text {
     color: var(--dark-gray);
     line-height: 1.8;
     margin-bottom: var(--spacing-md);
+}
+
+/* Inline SVG stars for ratings */
+.testimonial-rating .star-svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--primary-green);
 }
 
 .testimonial-author {
@@ -852,7 +862,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--light-gray);
+    background: transparent;
+    background: transparent;
 }
 
 .testimonial-author h4 {
@@ -954,8 +965,44 @@ section {
 
 
 .sector-icon {
-    font-size: 2.5rem;
     margin-bottom: 0.5rem;
+}
+
+/* Inline SVG icons for sectors */
+.sector-icon-svg {
+    width: 36px;
+    height: 36px;
+    fill: currentColor;
+}
+
+/* Avatar SVG inside testimonial */
+.testimonial-author .avatar svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-green);
+}
+
+/* Modern icon badge */
+.icon-badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(34, 197, 94, 0.08);
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    color: var(--primary-green);
+}
+
+.icon-badge .icon {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .sector-card h3 {
@@ -1009,7 +1056,7 @@ section {
 
 .contact-methods {
     display: flex;
-    gap: var(--spacing-md);
+    gap: 16px;
     justify-content: center;
     align-items: center;
     margin-bottom: var(--spacing-lg);
@@ -1021,18 +1068,18 @@ section {
 
 .contact-item {
     background: var(--white);
-    padding: var(--spacing-lg);
-    border-radius: 20px;
+    padding: 16px;
+    border-radius: 12px;
     backdrop-filter: none;
-    border: 2px solid rgba(74, 222, 128, 0.3);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1.5px solid rgba(74, 222, 128, 0.25);
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    width: 90px;
-    height: 90px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     position: relative;
     overflow: hidden;
 }
@@ -1051,8 +1098,8 @@ section {
 }
 
 .contact-item:hover {
-    transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 20px 40px rgba(74, 222, 128, 0.3);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(74, 222, 128, 0.2);
     border-color: var(--primary-green);
 }
 
@@ -1062,25 +1109,26 @@ section {
 
 
 .contact-icon {
-    font-size: 2.8rem;
+    font-size: 1.5rem;
     margin: 0;
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+    filter: none;
     transition: all 0.3s ease;
     color: var(--primary-green);
 }
 
 .contact-item:hover .contact-icon {
-    transform: scale(1.1);
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+    transform: scale(1.08);
+    color: var(--dark-green);
 }
 
 /* Ensure inline SVGs inherit the green color and scale nicely */
 .contact-icon .icon-svg {
-    width: 1em;
-    height: 1em;
+    width: 24px;
+    height: 24px;
     display: block;
+    fill: currentColor;
 }
 
 /* Specific styling for each contact method */
@@ -1290,13 +1338,15 @@ section {
         font-size: 0.7rem;
     }
     
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 /* Mobile landscape and below (768px) */
 @media (max-width: 768px) {
+    .logo img {
+        height: 60px;
+        max-width: 220px;
+    }
+    
     .nav-toggle {
         display: flex;
     }
@@ -1392,10 +1442,6 @@ section {
         padding: var(--spacing-md);
     }
     
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
 }
 
 /* ========================================
@@ -1618,43 +1664,193 @@ section {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+}
+
+.contact-info .contact-icon-svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    fill: var(--primary-green);
+    opacity: 0.9;
+}
+
+.contact-info-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    stroke: var(--primary-green);
+    fill: none;
+    stroke-width: 2;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.contact-info li:hover .contact-info-icon {
+    opacity: 1;
+    stroke: var(--dark-green);
 }
 
 /* Responsive Footer */
 @media (max-width: 768px) {
     .footer {
-        padding: 40px 0 16px;
+        padding: 40px 20px 20px;
     }
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    
+    .footer-logo {
+        margin-bottom: 30px;
         text-align: center;
     }
-    .footer-logo {
-        margin-bottom: 20px;
+    
+    .footer-logo img {
+        height: 60px;
+        max-width: 200px;
     }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .footer-section {
+        text-align: center;
+        padding: 0 10px;
+    }
+    
     .footer-section h3,
     .footer-section h4 {
-        font-size: 1.1rem;
-        margin-bottom: 12px;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
     }
+    
     .footer-section p {
-        line-height: 1.6;
-        margin-bottom: 10px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+        font-size: 0.95rem;
     }
+    
     .footer-section ul {
-        gap: 6px;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .contact-info li {
+        justify-content: center;
+        gap: 10px;
+        font-size: 0.9rem;
+        padding: 5px 0;
+    }
+    
+    .contact-info-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .social-links {
+        justify-content: center;
+        margin-top: 15px;
+        gap: 12px;
     }
     
     .footer-bottom {
         flex-direction: column;
         text-align: center;
-        gap: var(--spacing-sm);
+        gap: 15px;
+        padding-top: 25px;
+        margin-top: 20px;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.85rem;
+        margin: 0;
     }
     
     .footer-links {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .footer-links a {
+        font-size: 0.85rem;
+    }
+    
+    /* Hide Quick Links section on mobile */
+    .footer-section:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 35px 15px 15px;
+    }
+    
+    .footer-logo img {
+        height: 50px;
+        max-width: 180px;
+    }
+    
+    .footer-content {
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .footer-section {
+        padding: 0 5px;
+    }
+    
+    .footer-section h3,
+    .footer-section h4 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .footer-section p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .footer-section ul li {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+    }
+    
+    .contact-info li {
+        font-size: 0.85rem;
+        padding: 4px 0;
+    }
+    
+    .contact-info-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .social-links {
+        gap: 10px;
+    }
+    
+    .footer-bottom {
+        gap: 12px;
+        padding-top: 20px;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+    
+    .footer-links {
+        gap: 12px;
+    }
+    
+    .footer-links a {
+        font-size: 0.8rem;
     }
 }
 
@@ -1705,6 +1901,34 @@ section {
 
 .contact-map {
     margin-top: 40px;
+}
+
+.contact-detail-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.contact-detail-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-green);
+    background: rgba(74, 222, 128, 0.1);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.contact-detail-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--primary-green);
+    fill: none;
+    stroke-width: 2;
 }
 
 .contact-map h4 {
@@ -1891,33 +2115,52 @@ section {
     padding: 80px 0;
 }
 
+.cert-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .cert-content p {
     text-align: center;
     font-size: 1.2rem;
     color: var(--gray);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
+    justify-items: center;
+    align-items: center;
 }
 
 .cert-card {
     background: var(--white);
-    padding: 40px 30px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     text-align: center;
-    transition: var(--transition-medium);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .cert-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary-green);
 }
 
 .cert-logo-placeholder {
@@ -1962,29 +2205,87 @@ section {
 /* Logo image styling for certifications */
 .cert-card .cert-logo {
     width: 100%;
-    max-width: 220px;
-    max-height: 110px;
+    max-width: 200px;
+    max-height: 100px;
+    height: auto;
     object-fit: contain;
-    filter: grayscale(100%);
-    opacity: 0.9;
-    transition: transform .25s ease, filter .25s ease, opacity .25s ease;
+    filter: grayscale(30%);
+    opacity: 0.85;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
 }
 
 .cert-card:hover .cert-logo {
     filter: grayscale(0%);
     opacity: 1;
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 @media (max-width: 992px) {
     .cert-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 25px;
+        max-width: 900px;
+    }
+    
+    .cert-card {
+        max-width: 220px;
+        min-height: 150px;
+        padding: 30px 20px;
+    }
+    
+    .cert-card .cert-logo {
+        max-width: 180px;
+        max-height: 90px;
     }
 }
 
 @media (max-width: 768px) {
+    .certifications {
+        padding: 60px 0;
+    }
+    
+    .cert-content {
+        padding: 0 15px;
+    }
+    
+    .cert-content p {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+    
     .cert-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    
+    .cert-card {
+        max-width: 100%;
+        min-height: 140px;
+        padding: 25px 15px;
+    }
+    
+    .cert-card .cert-logo {
+        max-width: 160px;
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .cert-card {
+        min-height: 130px;
+        padding: 20px 12px;
+    }
+    
+    .cert-card .cert-logo {
+        max-width: 140px;
+        max-height: 70px;
     }
 }
 

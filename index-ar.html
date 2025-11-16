@@ -57,7 +57,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop playsinline>
-            <source src="../images/Option1.mp4" type="video/mp4">
+            <source src="images/Option1.mp4" type="video/mp4">
             متصفحك لا يدعم عرض الفيديو.
         </video>
         <div class="hero-overlay"></div>
@@ -88,15 +88,12 @@
                 <div class="cleaning-card" data-aos="flip-left" data-aos-delay="100">
                     <div class="cleaning-card-inner">
                         <div class="cleaning-card-front">
-                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
-                                <rect x="28" y="10" width="8" height="10" rx="1"></rect>
-                                <rect x="24" y="20" width="16" height="6" rx="1"></rect>
-                                <rect x="26" y="26" width="12" height="6" rx="1"></rect>
-                                <rect x="28" y="32" width="8" height="6" rx="1"></rect>
-                                <polygon points="18,50 46,50 32,46"></polygon>
-                                <polygon points="26,52 38,52 32,56"></polygon>
-                            </svg>
+                            <div class="cleaning-card-header">
+                                <span class="card-index">01</span>
+                                <span class="card-label">ليزر</span>
+                            </div>
                             <h3>التنظيف بالليزر</h3>
+                            <p class="cleaning-card-summary">تنظيف دقيق بحزم مركزة تحافظ على الأسطح الحساسة.</p>
                             <span class="cleaning-badge">دقة عالية</span>
                         </div>
                         <div class="cleaning-card-back">
@@ -110,12 +107,12 @@
                 <div class="cleaning-card" data-aos="flip-left" data-aos-delay="200">
                     <div class="cleaning-card-inner">
                         <div class="cleaning-card-front">
-                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
-                                <polygon points="32,14 36,22 45,24 36,26 32,34 28,26 19,24 28,22"/>
-                                <rect x="14" y="38" width="16" height="10" rx="1"></rect>
-                                <rect x="34" y="38" width="16" height="10" rx="1"></rect>
-                            </svg>
+                            <div class="cleaning-card-header">
+                                <span class="card-index">02</span>
+                                <span class="card-label">ثلج جاف</span>
+                            </div>
                             <h3>التنظيف بالثلج الجاف</h3>
+                            <p class="cleaning-card-summary">سفع خالي من المخلفات باستخدام حبيبات CO₂ للمعدات الحساسة.</p>
                             <span class="cleaning-badge">خالي من المخلفات</span>
                         </div>
                         <div class="cleaning-card-back">
@@ -129,12 +126,12 @@
                 <div class="cleaning-card" data-aos="flip-left" data-aos-delay="300">
                     <div class="cleaning-card-inner">
                         <div class="cleaning-card-front">
-                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
-                                <circle cx="24" cy="24" r="8"/>
-                                <circle cx="40" cy="18" r="6"/>
-                                <circle cx="38" cy="34" r="5"/>
-                            </svg>
+                            <div class="cleaning-card-header">
+                                <span class="card-index">03</span>
+                                <span class="card-label">صودا</span>
+                            </div>
                             <h3>التنظيف بالصودا</h3>
+                            <p class="cleaning-card-summary">وسط قلوي لطيف مثالي للطلاء والسخام ومشاريع الترميم.</p>
                             <span class="cleaning-badge">لطيف وآمن</span>
                         </div>
                         <div class="cleaning-card-back">
@@ -148,10 +145,12 @@
                 <div class="cleaning-card" data-aos="flip-left" data-aos-delay="400">
                     <div class="cleaning-card-inner">
                         <div class="cleaning-card-front">
-                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
-                                <polygon points="32,10 50,26 32,54 14,26"/>
-                            </svg>
+                            <div class="cleaning-card-header">
+                                <span class="card-index">04</span>
+                                <span class="card-label">حبيبات زجاج</span>
+                            </div>
                             <h3>التنظيف بحبيبات الزجاج</h3>
+                            <p class="cleaning-card-summary">وسط زجاجي ناعم ينعش المعادن والقوالب بدون كشط.</p>
                             <span class="cleaning-badge">غير كاشط</span>
                         </div>
                         <div class="cleaning-card-back">
@@ -165,12 +164,12 @@
                 <div class="cleaning-card" data-aos="flip-left" data-aos-delay="500">
                     <div class="cleaning-card-inner">
                         <div class="cleaning-card-front">
-                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
-                                <polygon points="10,50 32,26 54,50"/>
-                                <circle cx="22" cy="22" r="2"/>
-                                <circle cx="44" cy="20" r="2"/>
-                            </svg>
+                            <div class="cleaning-card-header">
+                                <span class="card-index">05</span>
+                                <span class="card-label">رمل</span>
+                            </div>
                             <h3>التنظيف بالرمل</h3>
+                            <p class="cleaning-card-summary">معالجة كاشطة ثقيلة للصدأ والطلاءات وإعداد الأسطح.</p>
                             <span class="cleaning-badge">ثقيل الواجب</span>
                         </div>
                         <div class="cleaning-card-back">
@@ -184,11 +183,12 @@
                 <div class="cleaning-card" data-aos="flip-left" data-aos-delay="600">
                     <div class="cleaning-card-inner">
                         <div class="cleaning-card-front">
-                            <svg class="cleaning-icon-svg" viewBox="0 0 64 64" aria-hidden="true">
-                                <path d="M18 36c0-5 4-9 9-9 2 0 4 .6 5.6 1.7A9 9 0 0146 33c5 0 9 4 9 9H18"/>
-                                <path d="M14 44h30"/>
-                            </svg>
+                            <div class="cleaning-card-header">
+                                <span class="card-index">06</span>
+                                <span class="card-label">بخار</span>
+                            </div>
                             <h3>التنظيف بالبخار</h3>
+                            <p class="cleaning-card-summary">تطهير بالبخار عالي الحرارة للتنظيف العميق الخالي من الكيماويات.</p>
                             <span class="cleaning-badge">خالي من الكيماويات</span>
                         </div>
                         <div class="cleaning-card-back">
@@ -210,50 +210,129 @@
             </div>
             
             <div class="values-grid-wrapper">
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12,2L13.09,8.26L21,9L17,14.14L18.18,21L12,17.77L5.82,21L7,14.14L3,9L10.91,8.26L12,2Z"/></svg>
-                        </div>
-                        <h3>محترفون معتمدون</h3>
-                        <p>فرق مدربة معتمدة تتبع المعايير الدولية.</p>
+            <div class="values-grid auto-slide">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2L13.09,8.26L21,9L17,14.14L18.18,21L12,17.77L5.82,21L7,14.14L3,9L10.91,8.26L12,2Z"/>
+                        </svg>
                     </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-                        </div>
-                        <h3>حلول صديقة للبيئة</h3>
-                        <p>منتجات وأساليب خضراء تحمي الأشخاص والبيئة.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12,1L7,5L12,9L17,5L12,1M7,9L12,13L17,9L12,5L7,9M7,17L12,21L17,17L12,13L7,17Z"/></svg>
-                        </div>
-                        <h3>معدات متقدمة</h3>
-                        <p>أدوات حديثة تمنح تنظيفاً دقيقاً مع وقت توقف أقل.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12,2L13.09,8.26L21,9L17,14.14L18.18,21L12,17.77L5.82,21L7,14.14L3,9L10.91,8.26L12,2Z"/></svg>
-                        </div>
-                        <h3>خدمة مخصصة</h3>
-                        <p>خطط تناسب احتياجات موقعك وميزانيتك وجدولك.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12,1L8.5,7L1,8.5L8.5,16L12,23L15.5,16L23,8.5L15.5,7L12,1Z"/></svg>
-                        </div>
-                        <h3>ضمان الجودة</h3>
-                        <p>إجراءات موثقة وفحوصات تضمن نتائج ثابتة.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12,1L7,5L12,9L17,5L12,1M7,9L12,13L17,9L12,5L7,9M7,17L12,21L17,17L12,13L7,17Z"/></svg>
-                        </div>
-                        <h3>دعم على مدار الساعة</h3>
-                        <p>مواعيد مرنة واستجابة سريعة وقتما تحتاج إلينا.</p>
-                    </div>
+                    <h3>محترفون معتمدون</h3>
+                    <p>فرق مدربة معتمدة تتبع المعايير الدولية.</p>
                 </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3>حلول صديقة للبيئة</h3>
+                    <p>منتجات وأساليب خضراء تحمي الأشخاص والبيئة.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L7,5L12,9L17,5L12,1M7,9L12,13L17,9L12,5L7,9M7,17L12,21L17,17L12,13L7,17Z"/>
+                        </svg>
+                    </div>
+                    <h3>معدات متقدمة</h3>
+                    <p>أدوات حديثة تمنح تنظيفاً دقيقاً مع وقت توقف أقل.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2L13.09,8.26L21,9L17,14.14L18.18,21L12,17.77L5.82,21L7,14.14L3,9L10.91,8.26L12,2Z"/>
+                        </svg>
+                    </div>
+                    <h3>خدمة مخصصة</h3>
+                    <p>خطط تناسب احتياجات موقعك وميزانيتك وجدولك.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L8.5,7L1,8.5L8.5,16L12,23L15.5,16L23,8.5L15.5,7L12,1Z"/>
+                        </svg>
+                    </div>
+                    <h3>ضمان الجودة</h3>
+                    <p>إجراءات موثقة وفحوصات تضمن نتائج ثابتة.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L7,5L12,9L17,5L12,1M7,9L12,13L17,9L12,5L7,9M7,17L12,21L17,17L12,13L7,17Z"/>
+                        </svg>
+                    </div>
+                    <h3>دعم على مدار الساعة</h3>
+                    <p>مواعيد مرنة واستجابة سريعة وقتما تحتاج إلينا.</p>
+                </div>
+                
+                <!-- Duplicated cards for seamless infinite scroll -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2L13.09,8.26L21,9L17,14.14L18.18,21L12,17.77L5.82,21L7,14.14L3,9L10.91,8.26L12,2Z"/>
+                        </svg>
+                    </div>
+                    <h3>محترفون معتمدون</h3>
+                    <p>فرق مدربة معتمدة تتبع المعايير الدولية.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3>حلول صديقة للبيئة</h3>
+                    <p>منتجات وأساليب خضراء تحمي الأشخاص والبيئة.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L7,5L12,9L17,5L12,1M7,9L12,13L17,9L12,5L7,9M7,17L12,21L17,17L12,13L7,17Z"/>
+                        </svg>
+                    </div>
+                    <h3>معدات متقدمة</h3>
+                    <p>أدوات حديثة تمنح تنظيفاً دقيقاً مع وقت توقف أقل.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2L13.09,8.26L21,9L17,14.14L18.18,21L12,17.77L5.82,21L7,14.14L3,9L10.91,8.26L12,2Z"/>
+                        </svg>
+                    </div>
+                    <h3>خدمة مخصصة</h3>
+                    <p>خطط تناسب احتياجات موقعك وميزانيتك وجدولك.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L8.5,7L1,8.5L8.5,16L12,23L15.5,16L23,8.5L15.5,7L12,1Z"/>
+                        </svg>
+                    </div>
+                    <h3>ضمان الجودة</h3>
+                    <p>إجراءات موثقة وفحوصات تضمن نتائج ثابتة.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,1L7,5L12,9L17,5L12,1M7,9L12,13L17,9L12,5L7,9M7,17L12,21L17,17L12,13L7,17Z"/>
+                        </svg>
+                    </div>
+                    <h3>دعم على مدار الساعة</h3>
+                    <p>مواعيد مرنة واستجابة سريعة وقتما تحتاج إلينا.</p>
+                </div>
+                
+            </div>
             </div>
         </div>
     </section>
@@ -569,54 +648,71 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-logo">
-                <img src="../images/qulitycleanlogo-removebg-preview.png" alt="شعار كواليتي كلين">
-            </div>
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>كواليتي كلين</h3>
-                    <p>خدمات تنظيف الاحترافية مع الدقة بالتميز والاستدامة ورضا العملاء.</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/quality.clean.kw" target="_blank" aria-label="إنستجرام" class="social-link instagram">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                        </a>
-                        <a href="https://www.tiktok.com/@Qulity.clean8" target="_blank" aria-label="تيك توك" class="social-link tiktok">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
-                        </a>
-                        <a href="https://wa.me/96597759069" target="_blank" aria-label="واتساب" class="social-link whatsapp">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        </a>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/qulitycleanlogo-removebg-preview.png" alt="شعار كواليتي كلين">
+                </div>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>كواليتي كلين</h3>
+                        <p>خدمات تنظيف احترافية مع التزام بالتميز والاستدامة ورضا العملاء.</p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/quality.clean.kw" target="_blank" aria-label="إنستجرام" class="social-link instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@Qulity.clean8" target="_blank" aria-label="تيك توك" class="social-link tiktok">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+                            </a>
+                            <a href="https://wa.me/96597759069" target="_blank" aria-label="واتساب" class="social-link whatsapp">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li><a href="index-ar.html">الرئيسية</a></li>
+                            <li><a href="about-ar.html">من نحن</a></li>
+                            <li><a href="services-ar.html">الخدمات</a></li>
+                            <li><a href="contact-ar.html">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>معلومات الاتصال</h4>
+                        <ul class="contact-info">
+                            <li>
+                                <svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                                    <circle cx="12" cy="9" r="2.5"/>
+                                </svg>
+                                المرقاب، الكويت
+                            </li>
+                            <li dir="ltr">
+                                <svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                                +965 22396999
+                            </li>
+                            <li>
+                                <svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                info@qualityclean.com
+                            </li>
+                            <li>
+                                <svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                الإثنين-الجمعة: 8 صباحاً - 6 مساءً
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>روابط سريعة</h4>
-                    <ul>
-                        <li><a href="index-ar.html">الرئيسية</a></li>
-                        <li><a href="about-ar.html">من نحن</a></li>
-                        <li><a href="services-ar.html">الخدمات</a></li>
-                        <li><a href="contact-ar.html">اتصل بنا</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>معلومات الاتصال</h4>
-                    <ul class="contact-info">
-                        <li>📍 المرقاب الكويت</li>
-                        <li dir="ltr"><svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-                            </svg>22396999 965+</li>
-                        <li><svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>info@qualityclean.com</li>
-                        <li>🕕 الإثنين-الجمعة: 8 صباحاً - 6 مساءً</li>
-                    </ul>
-                </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>© 2025 كواليتي كلين. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2025 كواليتي كلين. جميع الحقوق محفوظة.</p>
                 <div class="footer-links">
                     <a href="#">سياسة الخصوصية</a>
                     <a href="#">شروط الخدمة</a>

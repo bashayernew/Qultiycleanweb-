@@ -533,6 +533,11 @@ section {
     scrollbar-width: none;
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
+    cursor: grab;
+}
+
+.values-grid-wrapper:active {
+    cursor: grabbing;
 }
 
 .values-grid-wrapper::-webkit-scrollbar {
@@ -547,16 +552,7 @@ section {
 }
 
 .auto-slide {
-    animation: slide 60s linear infinite;
-}
-
-.values-grid-wrapper:hover .auto-slide {
-    animation-play-state: paused;
-}
-
-@keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    /* Animation handled by JavaScript for better manual scroll support */
 }
 
 .value-card {

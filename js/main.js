@@ -329,6 +329,179 @@ window.addEventListener('load', () => {
 });
 
 // ========================================
+// Auto-Slide with Manual Scroll Support
+// ========================================
+function initAutoSlide() {
+    const valuesGridWrapper = document.querySelector('.values-grid-wrapper');
+    const autoSlideGrid = document.querySelector('.values-grid.auto-slide');
+
+    if (!valuesGridWrapper || !autoSlideGrid) return;
+
+    let autoScrollInterval;
+    let manualScrollTimeout;
+    let isAutoScrolling = true;
+    let isManuallyScrolling = false;
+    let lastScrollLeft = valuesGridWrapper.scrollLeft;
+    let scrollSpeed = 0.5; // pixels per frame
+    const scrollDuration = 60000; // 60 seconds for full scroll
+    let halfWidth = 0;
+    
+    // Calculate scroll speed and half width based on content width
+    function calculateScrollSpeed() {
+        const totalWidth = autoSlideGrid.scrollWidth;
+        halfWidth = totalWidth / 2;
+        scrollSpeed = halfWidth / (scrollDuration / 16); // 60fps - scroll half width in scrollDuration
+    }
+    
+    // Auto-scroll function
+    function startAutoScroll() {
+        if (autoScrollInterval) return;
+        
+        autoScrollInterval = setInterval(() => {
+            if (isAutoScrolling && !isManuallyScrolling) {
+                isAutoScrollingNow = true;
+                const currentScroll = valuesGridWrapper.scrollLeft;
+                
+                // Reset to beginning when reaching halfway point (seamless loop)
+                if (halfWidth > 0 && currentScroll >= halfWidth) {
+                    valuesGridWrapper.scrollLeft = currentScroll - halfWidth;
+                } else {
+                    valuesGridWrapper.scrollLeft += scrollSpeed;
+                }
+                
+                // Reset flag after a short delay
+                setTimeout(() => {
+                    isAutoScrollingNow = false;
+                }, 20);
+            }
+        }, 16); // ~60fps
+    }
+    
+    // Function to pause auto-scroll
+    function pauseAutoScroll() {
+        if (!isManuallyScrolling) {
+            isManuallyScrolling = true;
+            isAutoScrolling = false;
+        }
+        
+        // Clear existing timeout
+        clearTimeout(manualScrollTimeout);
+        
+        // Resume auto-scroll after 3 seconds of inactivity
+        manualScrollTimeout = setTimeout(() => {
+            isManuallyScrolling = false;
+            isAutoScrolling = true;
+        }, 3000);
+    }
+    
+    // Initialize scroll speed after content loads
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(calculateScrollSpeed, 100);
+        });
+    } else {
+        setTimeout(calculateScrollSpeed, 100);
+    }
+    
+    // Recalculate on window resize
+    window.addEventListener('resize', () => {
+        calculateScrollSpeed();
+    });
+    
+    // Track if scroll is from auto-scroll or user
+    let isAutoScrollingNow = false;
+    
+    // Detect manual scroll via scrollbar drag
+    // Note: Wheel, touch, and mouse events handle most cases, this is a fallback
+    valuesGridWrapper.addEventListener('scroll', () => {
+        const currentScrollLeft = valuesGridWrapper.scrollLeft;
+        const scrollDiff = Math.abs(currentScrollLeft - lastScrollLeft);
+        
+        // If significant scroll happened and it wasn't from auto-scroll, pause
+        if (scrollDiff > 10 && !isAutoScrollingNow && !isManuallyScrolling) {
+            pauseAutoScroll();
+        }
+        
+        lastScrollLeft = currentScrollLeft;
+    });
+    
+    // Detect mouse wheel scroll
+    valuesGridWrapper.addEventListener('wheel', (e) => {
+        // Only pause if scrolling horizontally
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+            pauseAutoScroll();
+        }
+    }, { passive: true });
+    
+    // Detect touch scroll
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchStartTime = 0;
+    
+    valuesGridWrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        touchStartTime = Date.now();
+        pauseAutoScroll();
+    }, { passive: true });
+    
+    valuesGridWrapper.addEventListener('touchmove', (e) => {
+        const touchEndX = e.touches[0].clientX;
+        const touchEndY = e.touches[0].clientY;
+        
+        // Check if horizontal scroll is greater than vertical
+        if (Math.abs(touchEndX - touchStartX) > Math.abs(touchEndY - touchStartY)) {
+            pauseAutoScroll();
+        }
+    }, { passive: true });
+    
+    // Detect mouse drag (mousedown + mousemove)
+    let isMouseDown = false;
+    let mouseStartX = 0;
+    
+    valuesGridWrapper.addEventListener('mousedown', (e) => {
+        isMouseDown = true;
+        mouseStartX = e.clientX;
+        pauseAutoScroll();
+    });
+    
+    valuesGridWrapper.addEventListener('mousemove', (e) => {
+        if (isMouseDown) {
+            const mouseEndX = e.clientX;
+            if (Math.abs(mouseEndX - mouseStartX) > 5) {
+                pauseAutoScroll();
+            }
+        }
+    });
+    
+    valuesGridWrapper.addEventListener('mouseup', () => {
+        isMouseDown = false;
+    });
+    
+    valuesGridWrapper.addEventListener('mouseleave', () => {
+        isMouseDown = false;
+    });
+    
+    // Pause on hover (optional - can be removed if not desired)
+    valuesGridWrapper.addEventListener('mouseenter', () => {
+        // Keep auto-scroll running on hover, but allow manual scroll
+    });
+    
+    // Start auto-scroll after initialization
+    setTimeout(() => {
+        calculateScrollSpeed();
+        startAutoScroll();
+    }, 200);
+}
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoSlide);
+} else {
+    initAutoSlide();
+}
+
+// ========================================
 // Print Console Message
 // ========================================
 console.log('%c Quality Clean Website ', 'background: #2ecc71; color: #fff; padding: 10px; font-size: 16px; font-weight: bold;');
